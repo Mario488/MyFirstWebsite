@@ -1,0 +1,166 @@
+body{
+    background-image: url(/images/lamborghini-final.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+   
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+#contact{
+    border: none;
+    position: relative;
+    bottom: 30px;
+    font-size: 50px;
+    color: #00ffff;
+}
+.topnav {
+    background-color: #333;
+    overflow: none;
+    position: relative;
+    bottom: 65px;
+    left: 13px;
+
+
+}
+
+.topnav a {
+    float: right;
+    color: #6368f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    background-color: rgb(185, 180, 180);
+    
+
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: red;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+#contact {
+    text-shadow: 2px 2px #111;
+    text-decoration: none;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+    font-size: 50px;
+    color: #63d3f2;
+    position: relative;
+    margin: 0;
+    transition: 0.5s;
+    top: -10px;
+}
+
+
+
+
+ul {
+    list-style: none;
+    position: relative;
+    top: 500px;
+    font-size: 30px;
+    color:#ff4500;
+    
+}
+
+#fb{
+    color: #44a6c6;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    top:170px;
+    left: 150px;
+}
+#ig{
+    color: #c13584;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    top: 95px;
+    right: 100px;
+}
+#yt {
+    color: #c13584;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    top: 95px;
+    left: 400px; /*90*/
+    top: 20px;
+}
+#ttv {
+    color: purple;
+    width: 300px;
+    height: 70px;
+    position: relative;
+    top: 95px;
+    left: 610px;
+    /*90*/
+    top: -55px;
+}
+
+#phone{
+    color:#00ffff;
+    position: absolute;
+    left: 55px;
+    bottom: -20px;
+
+}
+
+#phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#phone:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+
+}
+
+#phone::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transform: scaleY(0);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+#phone:hover:after {
+    transform: scaleY(1);
+}
